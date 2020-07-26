@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/portfolio',function(){
+    return view('portfolio');
+});
+
+
+Route::fallback(function (){
+    return "Halaman yang anda tuju tidak ada";
+});
